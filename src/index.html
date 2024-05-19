@@ -10,53 +10,76 @@
 </head>
 <body class="w-full h-screen">
 
-    <header class="flex flex-row justify-around shadow">
+    <header class="flex flex-row justify-around shadow sticky top-0 bg-white">
         <img src="../assets/logofavorita.png" class="w-32 cursor-pointer" alt="Logo da Favorita">
         <ul class="flex flex-row gap-10 text-base self-center">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li class="hover:bg-blue-900 hover:p-1 hover:rounded-md hover:text-white hover:transition-opacity"><a href="#inicio">Início</a></li>
+            <li class="hover:bg-blue-900 hover:p-1 hover:rounded-md hover:text-white hover:transition-opacity"><a href="#servicos">Serviços</a></li>
+            <li class="hover:bg-blue-900 hover:p-1 hover:rounded-md hover:text-white hover:transition-opacity"><a href="#contato">Contato</a></li>
         </ul>
     </header>
 
-    <main class="w-full h-screen m-auto flex flex-col align-middle">
+    <main class="h-fit md:h-screen flex flex-col">
 
-        <div class="w-full h-full flex flex-col align-middle justify-center text-center gap-4" id="inicio">
+        <div class="h-screen flex flex-col justify-center items-center gap-5" id="inicio">
             <h1 class="text-3xl font-bold text-blue-900">Drogaria Favorita</h1>
-            <p class="w-96 self-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet qui dolore debitis, non consequuntur eos est ex unde quidem sint itaque rem facere, ullam esse nobis molestiae impedit fugiat cum!</p>
+            <p class="w-96 text-center self-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet qui dolore debitis, non consequuntur eos est ex unde quidem sint itaque rem facere, ullam esse nobis molestiae impedit fugiat cum!</p>
             <a href="#contato">
                 <button class="w-44 p-2 text-lg font-bold self-center border rounded-md cursor-pointer text-white bg-blue-900">Contato</button>
             </a>
         </div>
 
-        <div class="w-screen h-full  flex flex-col align-middle justify-center text-center gap-8 bg-blue-900" id="servicos">
+        <div class="h-screen p-5 flex flex-col items-center bg-blue-800" id="servicos">
             
             <h2 class="text-white text-2xl font-bold text-center">Serviços</h2>
 
-            <div class="w-full flex gap-6 justify-center">
+            <div class="h-full flex justify-center gap-32 flex-wrap">
 
-                <div class="w-96 h-full flex flex-col gap-5 shadow shadow-slate-800">
-                    <i class="fa-solid fa-circle-info fa-2xl self-start mb-4" style="color: #ffffff;"></i>
+                <div class="w-96 flex flex-col gap-2 justify-center p-4 shadow-md shadow-blue-900">
+                    <i class="fa-solid fa-circle-info fa-2xl self-start pb-4" style="color: #ffffff;"></i>
                     <h4 class="text-white font-bold text-start">Mais que uma Farmácia</h4>
-                    <p class="text-start text-white">Onde tradição e confiança se encontram</p>
+                    <p class="text-start text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dicta iste veritatis tempora quam libero.</p>
                 </div>
 
-                <div class="w-96 h-full flex flex-col gap-5 shadow shadow-slate-800">
-                    <i class="fa-solid fa-clipboard fa-2xl self-start mb-4" style="color: #ffffff;"></i>
+                <div class="w-96 flex flex-col gap-2 justify-center shadow-md shadow-blue-900">
+                    <i class="fa-solid fa-clipboard fa-2xl self-start pb-4" style="color: #ffffff;"></i>
                     <h4 class="text-white font-bold text-start">Remédios e Vitaminas</h4>
-                    <p class="text-start text-white">Seu conteúdo vai aqui. Edite ou remova este texto inline ou nas configurações de conteúdo do módulo. Você também pode estilizar todos os aspectos deste conteúdo no arquivo</p>
+                    <p class="text-start text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dicta iste veritatis tempora quam libero.</p>
                 </div>
 
-                <div class="w-96 h-full flex flex-col gap-5 shadow shadow-slate-800">
-                    <i class="fa-solid fa-vials fa-2xl self-start mb-4" style="color: #ffffff;"></i>
+                <div class="w-96 flex flex-col gap-2 justify-center shadow-md shadow-blue-900">
+                    <i class="fa-solid fa-vials fa-2xl self-start pb-4" style="color: #ffffff;"></i>
                     <h4 class="text-white font-bold text-start">Vacinações</h4>
-                    <p class="text-start text-white">Seu conteúdo vai aqui. Edite ou remova este texto inline ou nas configurações de conteúdo do módulo. Você também pode estilizar todos os aspectos deste conteúdo no arquivo</p>
+                    <p class="text-start text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dicta iste veritatis tempora quam libero.</p>
                 </div>
             </div> 
 
         </div>
-        <div class="w-full h-full" id="contato">
+        <div class="h-screen  flex flex-col items-center justify-center gap-5" id="contato">
+            <h1 class="text-xl font-bold">Escolha a unidade mais próxima da sua casa</h1>
 
+            <select class="bg-gray-200 rounded px-4 w-60 h-10 self-center" name="endereco" id="endereco" size="1">
+                <option selected value="">Selecione uma opção:</option>
+
+                <optgroup label="Icaraí" /> 
+                <option value="https://wa.me/552126121000?text=Quero+fazer+um+pedido">Av. Sete de Setembro, n 284</option>
+                <option value="https://wa.me/552127116060?text=Quero+fazer+um+pedido">Av. Sete de Setembro, n 230</option>
+                <option value="https://wa.me/552136025000?text=Quero+fazer+um+pedido">Rua Mariz e Barros, n 335</option>
+                <option value="https://wa.me/552126106000?text=Quero+fazer+um+pedido">Rua Cinco de julho, n 367</option>
+                
+                <optgroup label="Santa Rosa" />
+                <option value="https://wa.me/552127111100?text=Quero+fazer+um+pedido">Rua Santa Rosa, n 146</option>
+                
+                <optgroup label="Vital Brasil" />
+                <option value="https://wa.me/552137010550?text=Quero+fazer+um+pedido">Rua Mário Viana, n 497</option>
+                
+                <optgroup label="Beltrão" />
+                <option value="https://wa.me/552136020236?text=Quero+fazer+um+pedido">Rua Mário Viana, n 683, LJ 01</option>
+            </select>
+
+            <button class="bg-green-500 hover:bg-green-300 w-60 outline-none self-center p-3 rounded-md text-white" id="btn">
+                <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i>
+                Chamar no Whatsapp</button>
         </div>
     </main>
 
@@ -68,4 +91,3 @@
 <script src="script.js"></script>
 </html>
 
-https://bootstrapmade.com/content/templatefiles/OnePage/OnePage-bootstrap-website-template-md.webp
