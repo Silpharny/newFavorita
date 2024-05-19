@@ -1,0 +1,18 @@
+<select name="endereco" id="endereco" size="1">
+                    <option selected value="">Selecione uma opção:</option>
+    
+                    <optgroup label="Icaraí" /> 
+                    <option value="https://wa.me/552126121000?text=Quero+fazer+um+pedido">Av. Sete de Setembro, n 284</option>
+                    <option value="https://wa.me/552127116060?text=Quero+fazer+um+pedido">Av. Sete de Setembro, n 230</option>
+                    <option value="https://wa.me/552136025000?text=Quero+fazer+um+pedido">Rua Mariz e Barros, n 335</option>
+                    <option value="https://wa.me/552126106000?text=Quero+fazer+um+pedido">Rua Cinco de julho, n 367</option>
+                    
+                    <optgroup label="Santa Rosa" />
+                    <option value="https://wa.me/552127111100?text=Quero+fazer+um+pedido">Rua Santa Rosa, n 146</option>
+                    
+                    <optgroup label="Vital Brasil" />
+                    <option value="https://wa.me/552137010550?text=Quero+fazer+um+pedido">Rua Mário Viana, n 497</option>
+                    
+                    <optgroup label="Beltrão" />
+                    <option value="https://wa.me/552136020236?text=Quero+fazer+um+pedido">Rua Mário Viana, n 683, LJ 01</option>
+                </select>
